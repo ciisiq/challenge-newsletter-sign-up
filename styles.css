@@ -87,14 +87,26 @@ form {
   display: flex;
   flex-direction: column;
   padding-right: 2.2rem;
+  margin-top: 1.5rem;
+}
+
+.label-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.valid-email {
+  color: var(--Tomato);
+  font-size: 0.7rem;
+  display: none;
 }
 
 label {
-  font-size: 0.8rem;
-  font-weight: bold;
   display: flex;
   flex-direction: column;
-  margin-top: 1.5rem;
 }
 
 input {
@@ -104,6 +116,12 @@ input {
   border: 0.1rem solid var(--grey);
   margin: 0.5rem 0 0.7rem 0;
   padding: 1.2rem;
+}
+
+.error {
+  background-color: hsl(4, 100%, 67%, 0.2);
+  border: 0.1rem solid var(--Tomato);
+  color: var(--Tomato);
 }
 
 .sub-btn {
@@ -143,8 +161,30 @@ input {
 
 /* ------------- Sucess ----------------- */
 
-.success {
-  display: none;
+#sucess {
+  display: block;
+}
+
+.svg-2 {
+  width: 50px;
+}
+
+span {
+  font-weight: bold;
+}
+
+.sucess-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  background-color: var(--White);
+  width: 400px;
+  height: 400px;
+  border-radius: 2rem;
+}
+
+.p-success {
+  font-size: 0.9rem;
 }
 
 /* ------------- FOOTER ------------- */
