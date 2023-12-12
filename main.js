@@ -4,6 +4,7 @@ const form = document.getElementById('form');
 const errorMessage = document.getElementById('valid-email');
 const sucess = document.getElementById('sucess');
 const whiteContainer = document.getElementById('white-container');
+const dimiss = document.getElementById('dimiss');
 
 form.addEventListener('submit', hadleClick);
 
@@ -27,4 +28,12 @@ function validateEmail(email) {
     input.classList.add('error');
     errorMessage.style.display = 'block';
   }
+}
+
+dimiss.addEventListener('click', showAgain);
+
+function showAgain(email) {
+  whiteContainer.style.display = 'block';
+  whiteContainer.style.display = 'flex';
+  sucess.style.display = 'none';
 }
