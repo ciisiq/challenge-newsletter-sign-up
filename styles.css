@@ -212,3 +212,47 @@ a:hover {
 .attribution {
   color: var(--White);
 }
+
+/* --------------- Mobile --------------- */
+
+@media only screen and (max-width: 400px) {
+  body {
+    background-color: var(--White);
+    overflow: scroll;
+  }
+
+  .white-container {
+    flex-direction: column-reverse;
+    height: 100%;
+    width: 100%;
+  }
+
+  .image {
+    width: 100%;
+    object-fit: cover;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .sucess-container {
+    height: 100vh;
+    width: 100%;
+  }
+
+  .conf {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .sub-btn {
+    align-items: end;
+  }
+
+  footer {
+    display: none;
+  }
+}
